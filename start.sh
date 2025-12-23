@@ -1,6 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
+set -e
 
-echo "🚀 Starting backend server..."
+echo "🚀 Moving to backend directory"
+cd backend
 
+echo "📦 Installing dependencies"
 npm install
+
+echo "🚀 Starting server"
 npm start
